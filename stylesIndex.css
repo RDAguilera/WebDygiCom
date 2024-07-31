@@ -1,0 +1,491 @@
+/* Definir una variable CSS */
+:root {
+  --azul: rgb(49, 54, 116);
+  --naranja: rgb(232, 118, 31);
+  --cremita: rgb(243, 242, 225);
+  --orange: rgb(240, 225, 200);
+  --blanco: #ffff;
+  --celeste: rgb(0, 104, 157);
+  --verde: rgb(102, 147, 54);
+  --gris: rgb(66, 70, 81);
+  --amarillo:rgb(218, 205, 118);
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Open sans', Helvetica, Georgia;  
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;    
+  background-color: var(--cremita);
+}
+
+.Conteinercolumn {
+  display: flex;
+  width: 100%; /* Ajusta el ancho de la página */
+  background-color: var(--cremita); /* Cremita */  
+  font-family: 'Open sans', Helvetica, Georgia;
+}
+
+.column {
+  flex: 1;
+  padding-right: 20px;       
+}
+
+.left-column {
+  text-align: center;
+  margin: 0;
+}
+
+.right-column {
+  text-align: justify;    
+}
+
+.Conteinercolumn img {
+  max-width: 100%;
+  height: auto;
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+  margin-top: 5px;       
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px;     
+  box-shadow: 10px 10px 15px rgba(0, 0, 0);
+}
+
+.container img {
+  max-width: 1200px;   
+}
+
+header {
+  background-color: rgba(49, 54, 116); /* Azul */
+  color: var(--naranja);      
+  z-index: 1000; /* Se puede ajustar este valor según sea necesario */           
+}
+
+/*---Inicio Menu Escritorio-----*/
+nav {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  position: fixed;
+  z-index: 1000; /* Puedes ajustar este valor según sea necesario */
+  border-bottom: solid var(--orange);
+  background-color: rgba(49, 54, 116, 0.5); /* Azul */
+  left: 1%;
+  right: 1%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;  /* Alinea los elementos del menú en la misma línea */
+}
+
+nav ul li {  
+  white-space: nowrap;  /* Evita el salto de línea en el texto */    
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;  
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  color: var(--orange);
+  font-family: 'Roboto', 'Open sans', Helvetica, Georgia;
+  text-decoration: none;
+}
+
+.logo img {
+  max-width: 46%;
+  max-height: 46%;
+  margin-left: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 3px;    
+  border-radius: 99%;
+}
+
+/*---Fin Menu Escritorio-----*/
+
+.hero {
+  position: relative;
+  background: url('Imagenes/ImgEncabezado.webp') center/cover no-repeat; 
+  height: 400px; /* Ajusta la altura según tus necesidades */    
+  text-align: center;
+  overflow: hidden;   
+}
+
+.hero img {
+  width: auto;
+  height: auto;
+  object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  display: block;
+}
+
+.hero .container {
+  position: absolute;
+  right: 54%;
+  top: 40%;
+  background-color: rgba(49, 54, 116, 0.5); /* Azul con 50% de opacidad */
+  height: 200px;
+  transition: background-color 0.5s ease;
+}
+
+.hero h1 {
+  font-size: 4.5em; /* Tamaño del título */
+  margin-top: 5px; /* Espacio superior del título */
+  margin-bottom: 5px; /* Espacio inferior del título */
+  font-family: 'Roboto', sans-serif, Helvetica, Georgia;
+  font-weight: bold;
+  color: var(--blanco);
+}
+
+.hero p {
+  font-size: 1.5em; /* Tamaño del párrafo */
+  max-width: 600px; /* Ancho máximo del párrafo */
+  margin: 0 auto; /* Centrar el párrafo */
+  font-family: 'Open sans', Helvetica, Georgia;    
+  color: var(--cremita);
+}
+
+#eslogan{
+  color: var(--amarillo);
+}
+
+.subtitulos{
+  color: var(--azul);
+  font-size: 30px;
+  margin-top:20%;
+  font-family:'Roboto', sans-serif , Helvetica , Georgia;
+  font-weight:bold;   
+}
+
+.otrosSubtitulos{
+  padding-top: 3%;    
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 5%;
+  color: var(--azul);
+  font-size: 30px;    
+  font-family:'Roboto', sans-serif , Helvetica , Georgia;
+  font-weight:bold;   
+}
+
+#pOSubT{
+  margin-top: 5px;
+  margin-left: 8%;
+  font-family: 'Open sans' , Helvetica , Georgia;
+  color: var(--azul);
+}
+
+.Pie {
+  background-color: var(--azul);
+  height: 150px;
+  color: var(--orange); 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px;
+}
+
+.Pie .left {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 13px;
+}
+
+.Pie .right {
+  text-align: center;
+}
+
+.Pie p {
+  margin-top: 0;
+  padding: 0;
+}
+
+button {
+  padding: 12px 20px;  
+  cursor: pointer;
+}
+
+button.seleccionado {
+  background-color: var(--amarillo);
+  border: none;
+  color: var(--gris);
+  font-size: 16px;
+  margin: 5px;
+}
+
+button.seleccionado:hover {
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+#areaTexto, #textoSs{
+  margin-top: 20px;
+  padding: 20px;    
+  font-family: 'Open sans' , Helvetica , Georgia;
+  color: var(--azul);
+}
+
+#textoSsLi{
+  margin-top: 20px;
+  padding: 20px;    
+  font-family: 'Open sans' , Helvetica , Georgia;
+  color: var(--orange);
+}
+
+#ulLi{
+  color: var(--orange);
+}
+
+/* Estilos para la sección de SANBA Faltas y SANBA Licencias */
+.text-image {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.text-left {
+  flex: 1;
+  list-style: none;
+  padding-right: 20px;
+  text-align: justify;
+  color: var(--celeste);
+}
+
+.image-right {
+  flex: 1;
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.SupraContainerSs{
+  background-color: var(--amarillo);
+  border-radius: 1.5%;
+  margin-bottom: 20px;
+}
+
+.SupraContainerLi{
+  background-color: var(--verde);
+  border-radius: 1.5%;
+  margin-bottom: 20px;  
+}
+
+/* Estilo del contenedor */
+#iframeLi {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 80%;
+  background: #000;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto; /* Centra horizontalmente */
+}
+
+/* Estilo del iframe */
+.videoLi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+/* Inicio Estilos Servicio */
+.Servicio {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  margin: 20px;  
+}
+
+.ContainerServicio {
+  flex: 1;  
+  background-color: var(--gris);
+  margin-top:10px;
+  padding: 20px;
+  border-top-left-radius: 3%;
+  border-bottom-right-radius: 3%;
+  max-width: auto;
+  max-height: auto;
+}
+
+/* Estilos para el párrafo */
+.p_servicio p {  
+  color: var(--blanco);
+  line-height: 1.5;
+  max-width: 450px;
+  height: 200px;
+  padding: 20px;
+}
+
+.imagenSS img{
+  width: 700px;
+  height: 400px;
+  border-radius: 5%;
+  margin-left: 1%;
+}
+/* Fin Estilos Servicios */
+
+/* Estilos responsivos */
+@media (max-width: 768px) or ((orientation: landscape) and (max-width:940px)) {
+ 
+  /*---Menú Movil---*/
+  .nav-list {
+    position: absolute;
+    top: 85%;
+    left: 0;
+    flex-direction: column;
+    background-color: var(--azul);
+    width: 100%;
+    height:100vh;
+    text-align: end;      
+    transform: translateX(-105%);
+    transition: 0.8s ease all; /* Agrega una transición suave */
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%; /* Hace que el menú ocupe todo el ancho de la pantalla */
+    padding: 0;
+    display: none; /* Oculta el menú inicialmente */
+  }
+
+  .nav-list li {
+    margin-right: 0;
+    text-align: center; /* Centra los elementos del menú */
+    padding: 10px 0; /* Agrega un poco de espacio entre los elementos */
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px 0; /* Agrega espacio entre los enlaces */
+  }
+
+  .nav-list a:hover {
+    background-color: var(--orange); /* Cambia el color de fondo al pasar el mouse por encima */
+    color: var(--azul); /* Cambia el color del texto */
+  }
+
+  .menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 15px; 
+  }
+
+  .menu-toggle span {
+    display: block;
+    height: 4px;
+    width: 30px;
+    background-color: var(--cremita);
+    margin-bottom: 5px;
+    border-radius: 2px;  
+    transform-origin: 5px 0px;
+    transition: all 0.3s linear; /* Agrega una transición para suavizar la transformación */
+  }
+
+  .close span {
+    transform: rotate(45deg) translate(0px, 0px);
+  }
+
+  .close span:nth-child(2){
+    display: none;
+  }
+
+  .close span:nth-child(3){
+    transform: rotate(-45deg) translate(-5px, 1px);
+  }
+
+  .open{ transform: translateX(0) !important;}
+
+  /*---Logo---*/
+  .logo img {
+    max-width: 80px; /* Reduce el tamaño del logo */
+    max-height: 80px;
+    margin: 5px; /* Reduce el margen del logo */
+    padding: 0; /* Elimina el padding del logo */
+  }
+
+  /* Ajustes generales */
+  .Conteinercolumn {
+    flex-direction: column; /* Cambia a disposición vertical */
+  }
+
+  .container {
+    padding: 10px; /* Reduce el padding del contenedor */
+  }
+
+  .Servicio {
+    flex-direction: column; /* Cambia a disposición vertical */
+    margin: 10px 0; /* Reduce el margen */
+  }
+
+  .ContainerServicio {
+    margin: 10px 0; /* Reduce el margen */
+  }
+
+  .imagenSS img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+
+  .text-image {
+    flex-direction: column; /* Cambia a disposición vertical */
+  }
+
+  .image-right {
+    max-width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
+  }
+
+  .hero {
+    height: 300px; /* Reduce la altura del héroe */
+  }
+
+  .hero .container {
+    right: 50%;
+    top: 50%;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 2em; /* Reduce el tamaño del título */
+  }
+
+  .hero p {
+    font-size: 1em; /* Reduce el tamaño del párrafo */
+  }
+
+  .Pie {
+    grid-template-columns: 1fr; /* Cambia a disposición vertical */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+
+  .Pie .left, .Pie .right {
+    text-align: center; /* Centra el texto */
+  }
+
+  .p_servicio p {
+    max-width: 100%; /* Hace que el párrafo ocupe todo el ancho del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesIndex.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
+    <title>Inicio - DIGI COM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header>             
+        <nav>
+            <div class="logo">
+                <img src="Imagenes/logo.png" alt="Logo de Carson">                           
+            </div>            
+            <!--Menú hamburguesa-->           
+            <div class="menu-toggle" id="_toggle">
+                <span></span>
+                <span></span>
+                <span></span>                
+            </div>
+            <!--Fin Menú hamburguesa-->                                             
+            <ul class="nav-list" id="_items">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#quienes_somos">Quiénes somos</a></li>
+                <li><a href="#servicio">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <div class="hero">
+        <div class="container">
+            <h1>DYGI COM</h1>
+            <p>Soluciones digitales para Municipios</p>
+            <p id="eslogan">"Creamos soluciones informáticas pensando en mejorar la experiencia municipio - ciudadano."</p>            
+        </div>
+    </div> 
+    <section class="central">
+        <div id="quienes_somos" class="Conteinercolumn">                   
+            <div class="column right-column">
+                <h1 class="subtitulos">Quiénes Somos</h1>           
+                <button class="seleccionado" onclick="mostrarTexto('texto1')">VISIÓN</button>
+                <button class="seleccionado" onclick="mostrarTexto('texto2')">MISIÓN</button>
+                <button class="seleccionado" onclick="mostrarTexto('texto3')">VALORES</button>
+
+                <div id="areaTexto">
+                    <!-- El texto seleccionado se mostrará aquí -->
+                </div>
+            </div>
+            <div class="column left-column">
+                <img src="Imagenes/portada.jpg" alt="Imagen de presentación de quiénes somos">
+            </div>            
+        </div>
+    </section>    
+    <section id="servicio" class="Servicio">      
+        <div class="imagenSS">
+          <img src="Imagenes/imgActas.png" alt="Nuestros servicios">        
+        </div>
+        <div class="SupraContainerSS">
+          <div id="met"><h1 class="subtitulos">Nuestros servicios</h1></div>
+          <div class="ContainerServicio">        
+            <div class="p_servicio">          
+                <p>Desarrollamos software para mejorar la atención a los vecinos y optimizar la gestión interna de los municipios. Nuestro objetivo es informatizar las diferentes áreas de la administración pública. Por ejemplo, hemos creado <b>SANBA FALTAS</b> para el Juzgado Administrativo de Faltas, y <b>SANBA LICENCIAS</b>, una herramienta destinada a organizar y centralizar en una sola plataforma toda la información, requisitos y formación necesarios para que los ciudadanos puedan tramitar su licencia de conducir, ya sea por primera vez o para su renovación.</p>          
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="sanbafaltas">
+        <div id="textoSs" class="SupraContainerSs">
+            <div><h1 class="otrosSubtitulos">SANBA Faltas</h1></div>
+            <div  class="ContainerFaltas">        
+              <div class="p_faltas">          
+                  <p >Este software está diseñado para gestionar de manera eficiente las actas de infracción generadas por diversas áreas del municipio(Transito, Bromatología, Ambiente, Comercio). Sus características principales incluyen:</p>
+                  <div class="text-image">
+                    <ul class="text-left">
+                        <li><b>Registro y Seguimiento Centralizado:</b> Permite la creación, almacenamiento y seguimiento de todas las actas de infracción en una única plataforma.</li>
+                        <li><b>Automatización de Procesos:</b> Reduce la carga administrativa mediante la automatización de tareas repetitivas, como el envío de notificaciones y la generación de informes.</li>
+                        <li><b>Acceso Multiusuario y Control de Permisos:</b> Facilita la colaboración entre diferentes departamentos municipales, asegurando que cada usuario tenga acceso solo a la información relevante.</li>
+                        <li><b>Reportes y Estadísticas:</b> Generación de informes detallados y estadísticas para la toma de decisiones informadas y la mejora continua de los procesos de control.</li>
+                    </ul>
+                    <img src="Imagenes/colageSanbaFaltas.webp" alt="Imagen de SANBA Faltas" class="image-right">
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="sanbalicencias">
+        <div id="textoSsLi" class="SupraContainerLi">
+            <div><h1 class="otrosSubtitulos">SANBA Licencias</h1></div>
+            <div class="ContainerLicencias">        
+                <div class="p_licencias">          
+                    <p>Plataforma de capacitación en línea diseñada para simplificar y mejorar el proceso de obtención de la licencia de conducir por primera vez, así como para agilizar la renovación. Incluye:</p>
+                    <div class="text-image">
+                        <ul id="ulLi" class="text-left">
+                            <li><b>Contenido Educativo Integral:</b> Cursos interactivos que cubren todas las áreas necesarias para la formación de conductores responsables y seguros.</li>
+                            <li><b>Exámenes Prácticos y Teóricos:</b> Simulaciones de exámenes para preparar a los aspirantes de manera efectiva.</li>
+                            <li><b>Turnero Digital Integrado:</b> Sistema de gestión de turnos para exámenes teóricos y prácticos, optimizando la administración del tiempo y reduciendo esperas.</li>
+                            <li><b>Accesibilidad y Flexibilidad:</b> Disponible en línea para acceso desde cualquier lugar y en cualquier momento, permitiendo a los usuarios aprender a su propio ritmo.</li>
+                            <div id="iframeLi">
+                                <iframe class="videoLi" src="Imagenes/presentaciónLic.mp4" frameborder="0"></iframe>
+                            </div>
+                        </ul>
+                        <img src="Imagenes/colageSanbaLicencias.webp" alt="Imagen de plataforma web" class="image-right">
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </section>
+    <footer id="contacto" class="Pie">
+        <div class="left">
+            <p>&copy; 2023 Dygi Com - Soluciones informáticas para municipios - Todos los derechos reservados - Diseñado por RDA para Sanba Software</p>
+        </div>
+        <div class="right">
+            <h3><b>Contacto</b></h3>            
+            <p>Teléfono: 358-5627758 / 358-56542136</p>
+            <p>Email: sanbasoftware@gmail.com / digicomunica23@gmail.com </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        // Llamada inicial para mostrar el texto del botón predeterminado
+        mostrarTexto('texto1');
+    </script>
+</body>
+</html>
