@@ -463,12 +463,12 @@ button.seleccionado:hover {
   }
 
   .hero {    
-    height: 390; /* Reduce la altura del héroe */
+    height: 320px; /* Reduce la altura del héroe */
   }
 
   .hero .container {
     right: 50%;
-    top: 50%;
+    top: 30%;
     height: auto;    
   }
 
