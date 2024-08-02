@@ -216,6 +216,11 @@ nav ul li {
   padding: 0;
 }
 
+.Pie a{
+  color: var(--cremita);
+  text-decoration: none;
+}
+
 button {
   padding: 12px 20px;  
   cursor: pointer;
@@ -457,14 +462,14 @@ button.seleccionado:hover {
     max-width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
   }
 
-  .hero {
-    height: 300px; /* Reduce la altura del héroe */
+  .hero {    
+    height: 390; /* Reduce la altura del héroe */
   }
 
   .hero .container {
     right: 50%;
     top: 50%;
-    height: auto;
+    height: auto;    
   }
 
   .hero h1 {
