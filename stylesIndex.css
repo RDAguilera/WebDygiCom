@@ -291,10 +291,9 @@ button.seleccionado:hover {
   margin-bottom: 20px;  
 }
 
-/* Estilo del contenedor */
 #iframeLi {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
   height: 0;
   overflow: hidden;
   max-width: 80%;
@@ -303,15 +302,12 @@ button.seleccionado:hover {
   margin-left: auto;
   margin-right: auto; /* Centra horizontalmente */
 }
-
-/* Estilo del iframe */
-.videoLi {
+#iframeLi iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: 0;
 }
 
 
@@ -478,6 +474,10 @@ button.seleccionado:hover {
 
   .hero p {
     font-size: 1em; /* Reduce el tamaño del párrafo */
+  }
+
+  #eslogan{
+    font-size: 10px;
   }
 
   .Pie {
