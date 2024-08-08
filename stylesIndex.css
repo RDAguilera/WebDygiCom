@@ -347,6 +347,15 @@ button.seleccionado:hover {
 }
 /* Fin Estilos Servicios */
 
+.social-icons a i{
+  font-size: 25px;
+  transition: color 0.3s ease; 
+}
+
+.social-icons a i:hover {
+  color: var(--naranja); /* Color del icono al pasar el cursor */
+}
+
 /* Estilos responsivos */
 @media (max-width: 768px) or ((orientation: landscape) and (max-width:940px)) {
  
@@ -489,8 +498,6 @@ button.seleccionado:hover {
     text-align: center; /* Centra el texto */
   }
 
-  .p_servicio p {
-    max-width: 100%; /* Hace que el párrafo ocupe todo el ancho del contenedor */
-    height: auto; /* Ajusta la altura automáticamente */
+  .social-icons a i{
+    font-size: 30px;   
   }
-}
