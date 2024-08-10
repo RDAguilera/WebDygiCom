@@ -449,9 +449,10 @@ button.seleccionado:hover {
     flex-direction: column; /* Cambia a disposición vertical */
     margin: 10px 0; /* Reduce el margen */
   }
-
+  
   .ContainerServicio {
     margin: 10px 0; /* Reduce el margen */
+    height: 350px;    
   }
 
   .imagenSS img {
