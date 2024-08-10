@@ -452,7 +452,8 @@ button.seleccionado:hover {
   
   .ContainerServicio {
     margin: 10px 0; /* Reduce el margen */
-    height:25rem;    
+    height:25rem;
+    padding-top:10px;
   }
 
   .imagenSS img {
