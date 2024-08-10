@@ -334,7 +334,7 @@ button.seleccionado:hover {
 .p_servicio p {  
   color: var(--blanco);
   line-height: 1.5;
-  max-width: 450px;
+  max-width: auto;
   height: 200px;
   padding: 20px;
 }
@@ -448,11 +448,16 @@ button.seleccionado:hover {
   .Servicio {
     flex-direction: column; /* Cambia a disposición vertical */
     margin: 10px 0; /* Reduce el margen */
-  }
-  
+  }  
+
   .ContainerServicio {
     margin: 10px 0; /* Reduce el margen */
-    height: 350px;    
+    height: 25rem;
+    padding-top: 10px;
+  }
+
+  .p_servicio p{
+    padding-top: 10px;
   }
 
   .imagenSS img {
