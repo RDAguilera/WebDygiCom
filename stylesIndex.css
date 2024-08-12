@@ -44,10 +44,7 @@ body {
 .Conteinercolumn img {
   max-width: 100%;
   height: auto;
-  border-top-right-radius: 3%;
-  border-bottom-right-radius: 3%;
-  border-top-left-radius: 3%;
-  border-bottom-left-radius: 3%;
+  border-radius: 3%;
   margin-top: 5px;       
 }
 
