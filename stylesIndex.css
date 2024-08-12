@@ -4,7 +4,7 @@
   --naranja: rgb(232, 118, 31);
   --cremita: rgb(243, 242, 225);
   --orange: rgb(240, 225, 200);
-  --blanco: #ffff;
+  --blanco: #ffffffff;
   --celeste: rgb(0, 104, 157);
   --verde: rgb(102, 147, 54);
   --gris: rgb(66, 70, 81);
@@ -53,7 +53,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   border-radius: 30px;     
-  box-shadow: 10px 10px 15px rgba(0, 0, 0);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0,0.9);
 }
 
 .container img {
@@ -332,7 +332,7 @@ button.seleccionado:hover {
   color: var(--blanco);
   line-height: 1.5;
   max-width: auto;
-  height: 200px;
+  height: auto;
   padding: 20px;
 }
 
@@ -341,6 +341,7 @@ button.seleccionado:hover {
   height: 400px;
   border-radius: 5%;
   margin-left: 1%;
+  padding-right: 10px;
 }
 /* Fin Estilos Servicios */
 
@@ -448,8 +449,7 @@ button.seleccionado:hover {
   }  
 
   .ContainerServicio {
-    margin: 10px 0; /* Reduce el margen */
-    height: 25rem;
+    margin: 10px 0; /* Reduce el margen */    
     padding-top: 10px;
   }
 
