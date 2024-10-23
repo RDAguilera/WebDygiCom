@@ -45,7 +45,7 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 3%;
-  margin-top: 5px;       
+  margin-top:85px;       
 }
 
 .container {
@@ -118,7 +118,7 @@ nav ul li {
 
 .hero {
   position: relative;
-  background: url('Imagenes/ImgEncabezado.webp') center/cover no-repeat; 
+  background: url('Imagenes/DatosGestión.webp') center/cover no-repeat; 
   height: 400px; /* Ajusta la altura según tus necesidades */    
   text-align: center;
   overflow: hidden;   
@@ -135,7 +135,7 @@ nav ul li {
   position: absolute;
   right: 54%;
   top: 40%;
-  background-color: rgba(49, 54, 116, 0.5); /* Azul con 50% de opacidad */
+  background-color: rgba(24, 24, 27, 0.5); /* Azul con 50% de opacidad */
   height: 200px;
   transition: background-color 0.5s ease;
 }
@@ -158,13 +158,14 @@ nav ul li {
 }
 
 #eslogan{
-  color: var(--amarillo);
+  color:rgb(106, 228, 116);
+  font-size: 18px;
 }
 
 .subtitulos{
   color: var(--azul);
   font-size: 30px;
-  margin-top:20%;
+  margin-top:2%;
   font-family:'Roboto', sans-serif , Helvetica , Georgia;
   font-weight:bold;   
 }
@@ -327,13 +328,20 @@ button.seleccionado:hover {
   max-height: auto;
 }
 
+
+.ContainerServicio li{
+  color: var(--blanco);
+  font-size: 25px;
+}
+
 /* Estilos para el párrafo */
 .p_servicio p {  
   color: var(--blanco);
-  line-height: 1.5;
+  line-height: 1.2;
   max-width: auto;
   height: auto;
   padding: 20px;
+  font-size: 20px;
 }
 
 .imagenSS img{
@@ -436,15 +444,19 @@ button.seleccionado:hover {
 
   /* Ajustes generales */
   .Conteinercolumn {
-    flex-direction: column; /* Cambia a disposición vertical */
+    flex-direction: column; /* Cambia a disposición vertical */    
   }
 
+  .Conteinercolumn img {    
+    margin-top:10px;
+    margin-bottom: 15px;      
+  }
   .container {
     padding: 10px; /* Reduce el padding del contenedor */
   }
 
   .Servicio {
-    flex-direction: column; /* Cambia a disposición vertical */
+    flex-direction: column-reverse; /* Cambia a disposición vertical */
     margin: 10px 0; /* Reduce el margen */
   }  
 
