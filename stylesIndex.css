@@ -748,4 +748,13 @@ button.seleccionado:hover {
 	/* ------------------------------------------- */
 	/* FIN NUEVOS ESTILOS DEL CARRUSEL */
 	/* ------------------------------------------- */
+	
+	/* ------------------------------------------- */
+  #areaTexto {
+    /* Establece una altura mínima para el contenedor, evitando que los botones salten */
+    min-height: 300px; 
+    /* El valor puede requerir un ajuste fino dependiendo del tamaño de fuente en el dispositivo */
+  }
+  /* ------------------------------------------- */
+	
 }
