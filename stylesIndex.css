@@ -48,13 +48,13 @@ body {
   margin-top:85px;       
 }
 
-.container {
+/*.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 30px;     
   box-shadow: 10px 10px 15px rgba(0, 0, 0,0.9);
-}
+}*/
 
 .container img {
   max-width: 1200px;   
@@ -131,35 +131,98 @@ nav ul li {
   display: block;
 }
 
-.hero .container {
+/* ------------------------------------------- */
+/* CAMBIOS PARA DISEÑO DE DOBLE COLUMNA EN HERO */
+/* ------------------------------------------- */
+
+/* Estilos del contenedor interno del hero, usando Flexbox */
+.hero-layout {
   position: absolute;
-  right: 54%;
-  top: 40%;
-  background-color: rgba(24, 24, 27, 0.5); /* Azul con 50% de opacidad */
-  height: 200px;
-  transition: background-color 0.5s ease;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Asegura que no se pegue a los bordes */
+  max-width: 1100px; /* Controla el ancho máximo */
+  height: auto;
+  /* Eliminamos el background-color aquí para aplicarlo solo al hero-content */
+  background-color: transparent; 
+  box-shadow: none; /* Eliminamos la sombra del contenedor */
+  
+  display: flex; /* Habilitamos Flexbox para las columnas */
+  justify-content: space-between; /* Distribuye el espacio entre las columnas */
+  align-items: center; /* Alinea verticalmente los items */
+  padding: 0; /* Eliminamos padding del container, lo aplicamos dentro de las columnas */  
 }
 
-.hero h1 {
-  font-size: 4.5em; /* Tamaño del título */
-  margin-top: 5px; /* Espacio superior del título */
-  margin-bottom: 5px; /* Espacio inferior del título */
+/* Estilos para el área de título y subtítulo (Columna Izquierda) */
+.hero-content {
+  background-color: rgba(24, 24, 27, 0.5); /* Color de fondo para el texto */
+  padding: 20px;
+  border-radius: 20px;
+  flex: 1.5; /* Le damos más espacio al contenido principal */
+  margin-right: 40px;
+  text-align: left; /* Alineamos el texto a la izquierda */
+  box-shadow: 10px 10px 15px rgba(0, 0, 0,0.4);
+}
+
+/* Estilos para el área de Eslogan y CTA (Columna Derecha) */
+.hero-cta-area {
+  flex: 1; /* Le damos menos espacio que al título */
+  padding: 20px;
+  text-align: right; /* Alineamos el eslogan y el botón a la derecha */
+}
+
+/* Ajuste del título */
+.hero-content h1 {
+  font-size: 2.5em; 
+  margin-top: 0px; 
+  margin-bottom: 5px; 
   font-family: 'Roboto', sans-serif, Helvetica, Georgia;
   font-weight: bold;
   color: var(--blanco);
 }
 
-.hero p {
-  font-size: 1.5em; /* Tamaño del párrafo */
-  max-width: 600px; /* Ancho máximo del párrafo */
-  margin: 0 auto; /* Centrar el párrafo */
+/* Ajuste del párrafo principal */
+.hero-content p {
+  font-size: 1.5em;
+  margin: 0; 
   font-family: 'Open sans', Helvetica, Georgia;    
   color: var(--cremita);
 }
+/* ------------------------------------------- */
+/* FIN CAMBIOS DOBLE COLUMNA HERO */
+/* ------------------------------------------- */
+
+
+/* --- NUEVOS ESTILOS CTA PRINCIPAL --- */
+.cta-button {
+  display: inline-block;
+  background-color: var(--naranja); /* Naranja llamativo */
+  color: var(--blanco);
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border-radius: 50px; /* Forma de píldora */
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button:hover {
+  background-color: var(--azul); /* Cambio de color al pasar el ratón */
+  transform: translateY(-2px);
+}
+/* ------------------------------------- */
 
 #eslogan{
-  color:rgb(106, 228, 116);
+  color:var(--amarillo);
   font-size: 18px;
+  /* Aseguramos que el eslogan no se corte */
+  margin-bottom: 20px;
+  background-color: rgba(24, 24, 27, 0.5);
+  border-radius: 20px;
+  text-align:center;
 }
 
 .subtitulos{
@@ -332,6 +395,7 @@ button.seleccionado:hover {
 .ContainerServicio li{
   color: var(--blanco);
   font-size: 25px;
+  margin-bottom: 25px; /* Agregamos espacio para el mini-CTA */
 }
 
 /* Estilos para el párrafo */
@@ -344,6 +408,25 @@ button.seleccionado:hover {
   font-size: 20px;
 }
 
+/* --- NUEVOS ESTILOS CTA MINI --- */
+.cta-mini-button {
+  display: inline-block;
+  background-color: var(--verde); /* Verde para un color diferente y destacado */
+  color: var(--blanco);
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-mini-button:hover {
+  background-color: var(--azul);
+}
+/* ---------------------------------- */
+
 .imagenSS img{
   width: 700px;
   height: 400px;
@@ -352,6 +435,93 @@ button.seleccionado:hover {
   padding-right: 10px;
 }
 /* Fin Estilos Servicios */
+
+/* ------------------------------------------- */
+/* NUEVOS ESTILOS DEL CARRUSEL */
+/* ------------------------------------------- */
+
+.carrusel-section {
+    padding: 40px 0;
+    background-color: var(--cremita); /* Fondo del carrusel, puedes cambiarlo */
+}
+
+.carrusel-container {
+    position: relative;
+    max-width: 1200px; /* Ancho máximo visible de una imagen */
+    margin: 20px auto;
+    overflow: hidden; /* Oculta las imágenes que están fuera de la vista */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carrusel-track {
+    display: flex;
+    width: fit-content; /* Permite que todas las imágenes estén en una fila */
+    transition: transform 0.5s ease-in-out; /* Suaviza el deslizamiento */
+}
+
+.carrusel-track img {
+    width: 1200px; /* Ancho de cada imagen dentro del carrusel */
+    height: 530px;
+    display: block;
+    flex-shrink: 0; /* Evita que las imágenes se encojan */    
+}
+
+/* Estilos de los botones de navegación */
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(49, 54, 116, 0.7); /* Azul semi-transparente */
+    color: var(--blanco);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    font-size: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+.carrusel-btn:hover {
+    opacity: 1;
+    background-color: var(--azul);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* Indicadores de puntos */
+.carrusel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: var(--naranja); /* Naranja para el punto activo */
+}
+/* ------------------------------------------- */
+/* FIN NUEVOS ESTILOS DEL CARRUSEL */
+/* ------------------------------------------- */
 
 .social-icons a i{
   font-size: 25px;
@@ -468,6 +638,65 @@ button.seleccionado:hover {
   .p_servicio p{
     padding-top: 10px;
   }
+  
+  /* ------------------------------------------- */
+  /* AJUSTES RESPONSIVOS PARA EL NUEVO HERO (MÓVIL) */
+  /* ------------------------------------------- */
+  .hero-layout {
+    flex-direction: column; /* Cambia a una sola columna en móviles */
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    top: 60%;
+    transform: translateY(-50%); /* Centrado vertical simple */
+  }
+
+  .hero-content, .hero-cta-area {
+    flex: auto;
+    margin: 0px;
+    padding: 10px;
+    width: 90%; /* Ancho completo */
+  }
+  
+  .hero-content {
+      /* Mantenemos el fondo oscuro en la parte superior */
+      background-color: rgba(24, 24, 27, 0.5); 
+	  margin-top:15px
+  }
+  
+  .hero-cta-area {
+    /* Quitamos el fondo para que el CTA destaque */
+    background-color: transparent; 
+    text-align: center; /* Centramos los elementos en móvil */
+  }  
+  
+  .hero-content h1 {
+    font-size: 1.5em; /* Reducimos el tamaño para móvil */
+  }
+  
+  .hero p {
+    font-size: 1em; /* Reducimos el tamaño del párrafo */
+  }
+  
+  #eslogan{
+    font-size: 12px;
+	margin-bottom:12px;
+  }
+  
+  .cta-button {
+    font-size: 1em;
+    padding: 10px 20px;
+	margin:10px 0px 0px 0px;
+  }
+  
+  .hero {    
+    height: 350px; /* Reduce la altura del héroe */
+  }
+  /* ------------------------------------------- */
+  /* FIN AJUSTES RESPONSIVOS PARA EL NUEVO HERO */
+  /* ------------------------------------------- */
+
 
   .imagenSS img {
     width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
@@ -482,26 +711,8 @@ button.seleccionado:hover {
     max-width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
   }
 
-  .hero {    
-    height: 350px; /* Reduce la altura del héroe */
-  }
-
   .hero .container {
-    right: 50%;
-    top: 25%;
-    height: auto;    
-  }
-
-  .hero h1 {
-    font-size: 2em; /* Reduce el tamaño del título */
-  }
-
-  .hero p {
-    font-size: 1em; /* Reduce el tamaño del párrafo */
-  }
-
-  #eslogan{
-    font-size: 10px;
+    /* La lógica se movió a .hero-layout */
   }
 
   .Pie {
@@ -516,4 +727,25 @@ button.seleccionado:hover {
   .social-icons a i{
     font-size: 30px;   
   }
+	/* ------------------------------------------- */
+	/* INICIO NUEVOS ESTILOS DEL CARRUSEL */
+	/* ------------------------------------------- */
+  .carrusel-container {
+        max-width: 100%;
+        margin: 10px auto;
+        box-shadow: none;
+    }
+
+    .carrusel-track img {
+        width: 100%; /* Las imágenes ocupan todo el ancho del contenedor en móvil */
+        height: auto;
+    }
+
+    .carrusel-btn {
+        font-size: 20px;
+        padding: 5px;
+    }
+	/* ------------------------------------------- */
+	/* FIN NUEVOS ESTILOS DEL CARRUSEL */
+	/* ------------------------------------------- */
 }

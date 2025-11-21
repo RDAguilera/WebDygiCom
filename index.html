@@ -18,15 +18,12 @@
     <meta name="google-site-verification" content="L8fEWW4Z-bIakRBzvTTD_ab3LMMrzbLVIIy8qVnV9wI" />        
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap">
-    <!-- Incluir Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
     <title>Inicio - DYGI COM</title>
-    <!--Icono de la pagina-->
     <link rel="shortcut icon" href="Imagenes/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="stylesIndex.css">
-    <!---------------------->
     <link rel="canonical" href="https://www.dygicom.net.ar/"/>    
 </head>
 <body>
@@ -35,67 +32,70 @@
             <div class="logo">
                 <img src="Imagenes/logo.png" alt="Logo de Dygi Com">                           
             </div>            
-            <!--Menú hamburguesa-->           
             <div class="menu-toggle" id="_toggle">
                 <span></span>
                 <span></span>
                 <span></span>                
             </div>
-            <!--Fin Menú hamburguesa-->                                             
             <ul class="nav-list" id="_items">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#quienes_somos">Quiénes somos</a></li>
-                <li><a href="#servicio">Servicios</a></li>
+                <li><a href="#nuestra_propuesta">Nuestra Promesa</a></li>
+                <li><a href="#soluciones">Soluciones</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>              
     </header>
     <div id="inicio" class="hero">
-        <div class="container">
-            <h1>DYGI COM</h1>
-            <p>Soluciones digitales para Municipios</p>
-            <p id="eslogan">"Nos especializamos en el análisis de datos para transformarlos en información valiosa, facilitando la gestión y la implementación de políticas públicas efectivas."</p>            
+        <div class="container hero-layout"> 
+            
+            <div class="hero-content">
+                <h1>Administración Municipal Inteligente con DYGI COM</h1>
+                <p>De la gestión manual a las decisiones basadas en <b>Datos en tiempo real</b>.</p>
+            </div>
+
+            <div class="hero-cta-area">
+                <p id="eslogan">"Nos especializamos en el análisis de datos para transformarlos en información valiosa, facilitando la gestión y la implementación de políticas públicas efectivas."</p>
+                <a href="#contacto" class="cta-button">Solicita una Demo Sin Compromiso</a>
+            </div>
+            
         </div>
     </div>  
     <section class="central">
-        <div id="quienes_somos" class="Conteinercolumn">                   
+        <div id="nuestra_propuesta" class="Conteinercolumn">                   
             <div class="column right-column">
-                <h1 class="subtitulos">Quiénes Somos</h1>           
-                <button class="seleccionado" onclick="mostrarTexto('texto1')">MISIÓN</button>
-                <button class="seleccionado" onclick="mostrarTexto('texto2')">VISIÓN</button>
-                <button class="seleccionado" onclick="mostrarTexto('texto3')">VALORES</button>
+                <h1 class="subtitulos">Nuestra Promesa al Municipio</h1>           
+                <button class="seleccionado" onclick="mostrarTexto('texto1')">MÁS EFICIENCIA</button>
+                <button class="seleccionado" onclick="mostrarTexto('texto2')">MÁS TRANSPARENCIA</button>
+                <button class="seleccionado" onclick="mostrarTexto('texto3')">DATOS INTELIGENTES</button>
 
                 <div id="areaTexto">
-                    <!-- El texto seleccionado se mostrará aquí -->
-                </div>
+                    </div>
             </div>
             <div class="column left-column">
-                <img src="Imagenes/DatosGestiónLeftColumn.webp" alt="Imagen de presentación de quiénes somos">
+                <img src="Imagenes/DatosGestiónLeftColumn.webp" alt="Imagen de presentación de nuestra promesa de valor">
             </div>            
         </div>
     </section>    
-    <section id="servicio" class="Servicio">      
+    <section id="soluciones" class="Servicio">      
         
         <div class="SupraContainerSS">
-          <div id="met"><h1 class="subtitulos">¿Qué ofrecemos?</h1></div>
+          <div id="met"><h1 class="subtitulos">¡Adiós a la Burocracia! Nuestras Soluciones Clave</h1></div>
           <div class="ContainerServicio">        
             <div class="p_servicio">
                 <ul>
                     <li>
-                        <strong>Transformación de Datos en Decisiones Inteligentes</strong>
-                        <p>Nuestra misión principal es recopilar datos de diversas fuentes y convertirlos en información valiosa para facilitar la toma de decisiones.</p>
+                        <strong>SANBA LICENCIAS: El fin de las colas y el papeleo</strong>
+                        <p>Centraliza y agiliza el proceso de obtención de licencias de conducir. Reduce los tiempos de espera del ciudadano y optimiza el trabajo del personal municipal gracias a la digitalización integral.</p>
+                        <a href="https://wa.me/54935856542136?text=Hola%20me%20gustaría%20saber%20más%20sobre%20SanBa%20Licencias" class="cta-mini-button">Quiero Optimizar Licencias</a>
                     </li>
                     <li>
-                        <strong>Tecnología Moderna para Análisis Preciso</strong>
-                        <p>Utilizamos herramientas avanzadas para llevar a cabo un análisis de datos preciso, convirtiendo la información en un recurso clave para la gestión municipal eficiente.</p>
+                        <strong>SANBA FALTAS: Transparencia y Eficiencia Legal</strong>
+                        <p>Moderniza el Juzgado Administrativo de Faltas. Permite el seguimiento digital de expedientes, notificaciones automáticas y una gestión de multas más clara y auditable para el ciudadano y la administración.</p>
+                        <a href="https://wa.me/5493585627758?text=Hola%20me%20gustaría%20saber%20más%20sobre%20SanBa%20Faltas" class="cta-mini-button">Quiero Modernizar Faltas</a>
                     </li>
                     <li>
-                        <strong>Soluciones Adaptadas a Cada Municipio</strong>
-                        <p>Nuestras soluciones se ajustan a las necesidades únicas de cada localidad, brindando servicios personalizados que optimizan la administración local.</p>
-                    </li>
-                    <li>
-                        <strong>Software para Optimizar la Gestión Municipal</strong>
-                        <p>Desarrollamos software especializado para optimizar la gestión municipal y mejorar la atención a los vecinos. Con soluciones como <b>SANBA FALTAS</b> para el Juzgado Administrativo de Faltas y <b>SANBA LICENCIAS</b> para centralizar el proceso de obtención de licencias de conducir, informatizamos áreas clave de la administración pública, facilitando trámites y agilizando la gestión interna.</p>
+                        <strong>Análisis Predictivo de Datos Municipales</strong>
+                        <p>Utilizamos herramientas avanzadas para transformar los datos de tu municipio en información predictiva, clave para la implementación de políticas públicas más efectivas y con menor margen de error.</p>
                     </li>
                 </ul>                         
             </div>
@@ -103,6 +103,27 @@
         </div>
     </section>    
     
+	<section id="carrusel-section" class="carrusel-section">
+        <div class="container">
+            <!--<h2 class="subtitulos" style="text-align: center;">Nuestros Sistemas en Acción</h2>-->
+            <div class="carrusel-container">
+                <div class="carrusel-track">
+                    <img src="Imagenes/carrusel_licencias.png" alt="Interfaz de SANBA Licencias">
+                    <img src="Imagenes/carrusel_faltas.png" alt="Interfaz de SANBA Faltas">
+                    <img src="Imagenes/carrusel_licencias1.png" alt="Interfaz de SANBA Licencias 1">
+                    <img src="Imagenes/carrusel_faltas1.png" alt="Interfaz de SANBA Faltas 1">
+					<img src="Imagenes/carrusel_licencias2.png" alt="Interfaz de SANBA Faltas 2">
+                </div>
+                
+                <button class="carrusel-btn prev-btn"><i class='bx bx-chevron-left'></i></button>
+                <button class="carrusel-btn next-btn"><i class='bx bx-chevron-right'></i></button>
+
+                <div class="carrusel-indicators">
+                </div>
+            </div>
+        </div>
+    </section>
+	
     <footer id="contacto" class="Pie">
         <div class="left">
             <p>&copy; 2023 Dygi Com - Soluciones informáticas para municipios - Todos los derechos reservados - Diseñado por RDA para Sanba Software</p>          
@@ -114,8 +135,7 @@
             <div class="social-icons">
                 <a href="https://www.facebook.com/profile.php?id=61551841723715" target="_blank"><i class='bx bxl-facebook'></i></a>
                 <a href="https://www.instagram.com/digicomunica?igsh=emQzNTByNGFxbGFi" target="_blank"><i class='bx bxl-instagram'></i></a>
-                <!--<a href="https://www.youtube.com/@DygiCom" target="_blank"><i class='bx bxl-youtube'></i></a>-->
-            </div>
+                </div>
         </div>
     </footer>
     <script src="script.js"></script>
